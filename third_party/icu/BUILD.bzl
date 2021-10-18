@@ -21,6 +21,11 @@ cc_library(
     ],
 )
 
+alias(
+    name = "hdrs",
+    actual = ":headers",
+)
+
 cc_library(
     name = "common",
     hdrs = glob(["icu4c/source/common/unicode/*.h"]),
